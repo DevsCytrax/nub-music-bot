@@ -15,7 +15,7 @@ GROUP       = os.getenv("GROUP", "rishusupport")
 BOT_TOKEN      = os.getenv("BOT_TOKEN")
 STRING_SESSION = os.getenv("STRING_SESSION")
 try:
-    MONGODB_URI = os.environ["MONGODB_URI","mongodb+srv://Krishna:pss968048@cluster0.4rfuzro.mongodb.net/?retryWrites=true&w=majority"]  # fail fast on startup if unset — never bake in a cluster
+    MONGODB_URI = os.environ["MONGODB_URI"]  # fail fast on startup if unset — never bake in a cluster
 except KeyError:
     raise SystemExit("MONGODB_URI is not set. Set it via environment (or .env for local dev) — no default cluster is baked in.")
 
