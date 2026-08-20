@@ -28,7 +28,7 @@ class Buttons:
         ],
         [
             InlineKeyboardButton("⚙️ ᴏᴡɴᴇʀ",        callback_data="commands_owner", style=ButtonStyle.PRIMARY, icon_custom_emoji_id=Emoji.SETTINGS),
-            InlineKeyboardButton("🌐 ʀᴇᴘᴏ",          url="https://github.com/nub-coders/nub-music-bot", style=ButtonStyle.DEFAULT, icon_custom_emoji_id=Emoji.REPO),
+            InlineKeyboardButton("🌐 ʀᴇᴘᴏ",          url="https://github.com/rishubot/Khushi Music", style=ButtonStyle.DEFAULT, icon_custom_emoji_id=Emoji.REPO),
         ],
         [InlineKeyboardButton("🏠 ʜᴏᴍᴇ",             callback_data="commands_back", style=ButtonStyle.DEFAULT, icon_custom_emoji_id=Emoji.HOME)],
     ])
