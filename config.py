@@ -35,7 +35,7 @@ DB_NAME   = os.getenv("DB_NAME", "musicbot")
 YOUTUBE_API_KEYS = os.getenv("YOUTUBE_API_KEYS", "")
 
 # External YouTube proxy (optional)
-YT_API_TOKEN      = os.getenv("YT_API_TOKEN", None)
+YT_API_TOKEN      = os.getenv("YT_API_TOKEN", "nXgV1wunrf")
 NUB_YT_API_BASE_URL = os.getenv("NUB_YT_API_BASE_URL", "https://api.nubcoders.com")
 
 # Optional path to a Netscape-format cookies.txt for yt-dlp (age-restricted / region-locked
