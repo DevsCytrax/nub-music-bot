@@ -6,16 +6,16 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # ── Telegram (non-sensitive — safe as defaults) ─────────────────────────────────
-API_ID      = os.getenv("API_ID", "2040")
-API_HASH    = os.getenv("API_HASH", "b18441a1ff607e10a989891a5462e627")
-OWNER_ID    = int(os.getenv("OWNER_ID", "6076474757"))
-GROUP       = os.getenv("GROUP", "nub_coder_s")
+API_ID      = os.getenv("API_ID", "14050586")
+API_HASH    = os.getenv("API_HASH", "42a60d9c657b106370c79bb0a8ac560c")
+OWNER_ID    = int(os.getenv("OWNER_ID", "5738579437"))
+GROUP       = os.getenv("GROUP", "rishusupport")
 
 # ── Sensitive — must be set via environment, no defaults ────────────────────────
-BOT_TOKEN      = os.getenv("BOT_TOKEN", "")
-STRING_SESSION = os.getenv("STRING_SESSION", "")
+BOT_TOKEN      = os.getenv("BOT_TOKEN")
+STRING_SESSION = os.getenv("STRING_SESSION")
 try:
-    MONGODB_URI = os.environ["MONGODB_URI"]  # fail fast on startup if unset — never bake in a cluster
+    MONGODB_URI = os.environ["MONGODB_URI","mongodb+srv://Krishna:pss968048@cluster0.4rfuzro.mongodb.net/?retryWrites=true&w=majority"]  # fail fast on startup if unset — never bake in a cluster
 except KeyError:
     raise SystemExit("MONGODB_URI is not set. Set it via environment (or .env for local dev) — no default cluster is baked in.")
 
@@ -25,7 +25,7 @@ INITIAL_ADMIN_IDS = [
 ]
 
 # ── Optional ──────────────────────────────────────────────────────────────────────
-LOGGER_ID = os.getenv("LOGGER_ID", None)
+LOGGER_ID = os.getenv("LOGGER_ID", "-1001992970818")
 DB_NAME   = os.getenv("DB_NAME", "musicbot")
 
 # ── YouTube API ───────────────────────────────────────────────────────────────────
